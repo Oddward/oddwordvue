@@ -6,7 +6,7 @@
                 <span>Welcome to the</span>
                 <h1 class="main text-orange-gradient relative">Oddward blog</h1>
             </header>
-            <p class="text-lg">Explore, reach out and discuss some ideas around software development, personal development, design, and where my hobbies and interests align with those.</p>
+            <p class="text-2xl">Explore, reach out and discuss some ideas around software development, personal development, design, and where my hobbies and interests align with those.</p>
             <div class="flex justify-end px-4">
                 <PageLink label="About me" />
             </div>
@@ -19,12 +19,21 @@
         <div class="bg-slate-500 h-[2px] w-1/2 ml-auto"></div>
     </div>
 
-    <section id="main-links" class="flex justify-around flex-wrap py-8">
+    <section id="main-links" class="flex justify-evenly flex-wrap gap-4 py-8 px-8">
         <PeekLinkCard label="Instagram" icon="icon-park-outline:instagram" class2="bg-insta"/>
         <PeekLinkCard label="Github" icon="icon-park-outline:github" class2="bg-black"/>
-        <PeekLinkCard label="CodePen" icon="ant-design:codepen-outlined" class2="bg-black"/>
         <PeekLinkCard label="Dribbble" icon="icon-park-outline:dribble" class2="bg-dribbble"/>
+        <PeekLinkCard label="CodePen" icon="ant-design:codepen-outlined" class2="bg-black"/>
     </section>
+
+    <section id="posts" class="py-8 px-8">
+        <BlogPosts />
+    </section>
+
+    <section id="projects" class="py-8 px-8">
+        <Projects />
+    </section>
+    
 </template>
 
 <style scoped>

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* basic defaults */
+:root {
+    font-size: 16;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: .2em;
+}
+
+@layer base {
+    body {
+        @apply bg-slate-900 text-gray-200 text-base
+    }
+}
+
+@layer components {
+    h1.main {
+        @apply text-5xl font-black italic
+    }
+    .text-orange-gradient, .pretty-link {
+        background: linear-gradient(225deg, rgb(255, 153, 0) 0%, rgb(255, 0, 53));
+        background: -o-linear-gradient(225deg, rgb(255, 153, 0) 0%, rgb(255, 0, 53));
+        background: -moz-linear-gradient(225deg, rgb(255, 153, 0) 0%, rgb(255, 0, 53));
+        background: -webkit-linear-gradient(45deg, rgb(255, 153, 0) 0%, rgb(255, 0, 53));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+        /* padding-bottom: .2em; */
+    }
+}
+
+@layer utilities {
+    .bg-linkedin{
+        background-color: #0077B5; /*LinkedIn blue*/
+    }
+    .bg-insta, .bg-insta-onhover:hover { /*background - Instagram*/
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+    .bg-dribbble {
+        background-color: #ea4c89; /*Dribbble pink*/
+    }
+}
+
+
+/* Generic Elements */

@@ -19,10 +19,10 @@
         <div class="bg-slate-500 h-[2px] w-1/2 ml-auto"></div>
     </div>
 
-    <section id="main-links" class="flex justify-evenly flex-wrap gap-4 py-8 px-8">
+    <section id="main-links" class="flex justify-evenly flex-wrap gap-2 py-8 px-8 mx-auto w-3/4">
         <PeekLinkCard label="Instagram" icon="icon-park-outline:instagram" class2="bg-insta"/>
         <PeekLinkCard label="Github" icon="icon-park-outline:github" class2="bg-black"/>
-        <PeekLinkCard label="Dribbble" icon="icon-park-outline:dribble" class2="bg-dribbble"/>
+        <PeekLinkCard label="Dribbble" icon="icon-park-outline:dribble" class2="bg-dribbble order-4"/>
         <PeekLinkCard label="CodePen" icon="ant-design:codepen-outlined" class2="bg-black"/>
     </section>
 

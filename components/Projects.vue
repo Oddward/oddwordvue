@@ -5,8 +5,8 @@
     </header>
 
     <div class="flex flex-start gap-8">
-        <ProjectCard title="React music player" src="https://via.placeholder.com/400x300" />
-        <ProjectCard title="Mobile home screen setups platform" src="https://via.placeholder.com/400x300" />
+        <ProjectCard title="React music player" src="https://via.placeholder.com/400x300" href="/"/>
+        <ProjectCard title="Mobile home screen setups platform" src="https://via.placeholder.com/400x300" href="/"/>
     </div>
     
     <!-- <div class="flex justify-center content-center">

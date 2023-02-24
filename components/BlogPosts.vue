@@ -4,11 +4,25 @@
         <div class="bg-slate-500 w-full h-[2px]"></div>
     </header>
 
-    <PostCard title="Some interesting title" desc="This is a description for or a snippet from some fancy post." src="http://via.placeholder.com/300x200" url="/"/>
-    <PostCard title="Another interesting title" desc="This is a description for or a snippet from some fancy post." src="http://via.placeholder.com/300x200" url="/"/>
-    <PostCard title="Actually not a very interesting title" desc="This is a description for or a snippet from some fancy post." src="http://via.placeholder.com/300x200" url="/"/>
+    <!-- <slot></slot> -->
+    <ContentList v-slot="{ list }">
+        <PostCard v-for="post in list" :key="post._path" 
+            :title="post.title"
+            :desc="post.description"
+            :src="post.thumbnail"
+            :url="post._path" />
+    </ContentList>
+
     <div class="flex justify-center content-center">
-        <PageLink label="View all posts" href="/" />
+        <PageLink label="View all posts" href="/posts" />
     </div>
     
 </template>
+
+<script>
+    export default {
+        props: {
+            preview: Boolean
+        }
+    }
+</script>

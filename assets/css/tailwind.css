@@ -7,6 +7,8 @@
     font-size: 16;
 }
 
+html, body { height: 100%; }
+
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: .2em;
 }
@@ -19,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer components {
     h1.main {
-        @apply text-5xl font-black italic
+        @apply text-5xl font-black
     }
     .text-orange-gradient, .pretty-link {
         background: linear-gradient(225deg, rgb(255, 153, 0) 0%, rgb(255, 0, 53));

@@ -4,7 +4,7 @@
         <ContentDoc v-slot="{ doc }">
 
             <header class="w-full h-full col-span-5 px-4">
-                <a id="back-btn" href="javascript:history.back()" class="group flex items-center noshrink gap-2 text-xl text-slate-500 hover:text-slate-300 py-4">
+                <a id="back-btn" href="/posts" class="group flex items-center noshrink gap-2 text-xl text-slate-500 hover:text-slate-300 py-4">
                     <Icon name="icon-park-outline:arrow-left"/>
                     <span class="opacity-0 group-hover:opacity-100 leading-tight">posts</span>
                 </a>
@@ -23,11 +23,12 @@
                     <Logo :outline="true" class="fill-none stroke-[4px] stroke-slate-400" width="48" height="48" />
                 </span>
                 <span class="flex justify-center text-slate-400 text-base mb-4" ref="myDate">{{ formatDate(doc.date) }}</span>
+                
                 <ContentRenderer :value="doc" />
+
                 <hr class="my-8">
-                <div>
-                    <p>Some author info...</p>
-                </div>
+
+                <AboutAuthor />
             </article>
 
         </ContentDoc>

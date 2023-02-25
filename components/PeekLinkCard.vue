@@ -1,11 +1,11 @@
 <template>
     <div class="relative pt-4 px-2 mb-8 overflow-hidden">
-        <a href="#" class="flex content-center rounded-md p-6 transition-all duration-200 w-[400px] h-[96]" :class="$attrs.class2">
+        <a :href="$attrs.href" class="flex content-center rounded-md p-6 transition-all duration-200 w-[400px] h-[96] cursor-pointer" :class="$attrs.class2">
             <div class="flex items-center text-2xl">
                 <Icon :name="icon" size="1em" />
                 <span class="font-semibold leading-none">{{ label }}</span>
             </div>
-            <img src="https://via.placeholder.com/80x100" alt="" width="80" height="100" class="absolute transition-all duration-200 ease-out rounded bg-gray-500">
+            <img :src="$attrs.src" alt="" width="80" height="100" class="absolute transition-all duration-200 ease-out rounded bg-gray-500">
         </a>
     </div>
 </template>
@@ -14,7 +14,15 @@
     export default {
         props: {
             label: 'Instagram',
-            icon: 'icon-park-outline:instagram'
+            icon: 'icon-park-outline:instagram',
+            url: {
+                type: String,
+                default: '#'
+            },
+            img: {
+                type: String,
+                default: 'https://via.placeholder.com/80x100'
+            }
         }
     }
 </script>

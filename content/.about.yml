@@ -1,0 +1,15 @@
+# Referrable data about author, site, and associated content
+
+author: "Mugtaba G"
+avatar: "/img/pfp1.jpg"
+bio: "An African raised in Asia, a melting pot of cultures and interests with most of them revolving around visual arts, natural sciences and understanding people. Usually consuming tonnes of media (especially animation), practicing web development and graphic design, gaming, and/or hanging out on a discord chat."
+
+friends: [
+    {
+    #     title: "Mr. Smith",
+    #     href: "http://smith.sonian/"
+    # },{
+        title: "Triple A",
+        href: "http://ahmadaa1995.wixsite.com/triplea"
+    }
+]

@@ -34,6 +34,17 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-box-decoration-break: clone;
         /* padding-bottom: .2em; */
     }
+    .floater-nav {
+        @apply fixed left-8 top-16 flex-col text-xl gap-12 w-32;
+    }
+    .floater-nav .logo {
+        width: 48px;
+        height: 48px;
+    }
+    .floater-nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @layer utilities {

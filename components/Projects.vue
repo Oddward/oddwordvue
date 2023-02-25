@@ -1,12 +1,12 @@
 <template>
-    <header class="flex items-end gap-8 text-4xl text-slate-300 h-[1em]">
-        <h1 class="inline-block whitespace-nowrap">PROJECTS</h1>
-        <div class="bg-slate-500 w-full h-[2px]"></div>
-    </header>
-
-    <div class="flex flex-start gap-8">
-        <ProjectCard title="React music player" src="https://via.placeholder.com/400x300" />
-        <ProjectCard title="Mobile home screen setups platform" src="https://via.placeholder.com/400x300" />
+    <div class="flex justify-start gap-4 flex-wrap my-8 2xl:my-2">
+        <!-- <div class="flex-auto w-full h-auto"> -->
+            <ProjectCard class="grow-0 shrink-0" title="React music player" src="https://cdn.dribbble.com/users/9537543/screenshots/17125907/media/ed52821f408bffb3f5ad4efc07dae285.png?compress=1&resize=1000x750&vertical=top" href="https://dribbble.com/shots/17125907-Slick-desktop-music-player"/>
+        <!-- </div> -->
+        <!-- <div class="flex-auto w-full h-auto"> -->
+            <ProjectCard class="grow-0 shrink-0" title="Mobile home screen setups platform" src="/img/NLSetups - User Profile ss.png" href="#"/>
+        <!-- </div> -->
+        
     </div>
     
     <!-- <div class="flex justify-center content-center">

@@ -26,7 +26,7 @@
         <PeekingSocialLinks />
     </section>
 
-    <section id="posts" class="relative py-8 px-8 xxl:my-8 xxl:ml-8">
+    <section id="posts" class="relative py-8 px-8 xxl:my-8">
         <SectionHeader title="BLOG POSTS" class="xxl:hidden"/>
         <SectionHeader vertical title="BLOG POSTS" class="absolute -left-8" />
         <BlogPosts preview />

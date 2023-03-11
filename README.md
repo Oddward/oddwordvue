@@ -1,4 +1,16 @@
-# Nuxt Example
+# Oddword blog - Nuxt // Vue3
+
+A personal site and blog, made to move away from Jekyll and Github Pages and to try a modern js framework deployed on a more versatile host.
+
+Features // Technologies
+
+- Vue SFC with the options API
+- Nuxt 3
+    - Nuxt Content
+- TailwindCSS
+- responsive for mobile — ultra widescreen
+
+___
 
 Deploy your [Nuxt](https://nuxt.com) project to Vercel with zero configuration.
 

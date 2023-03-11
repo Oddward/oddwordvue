@@ -15,7 +15,7 @@
                     <span>//</span>
                     <a href="/posts" class="tag hover:underline hover:text-slate-300">{{ doc.tags }}</a>
                 </div>
-                <img :src="`${doc.thumbnail}`" alt="post thumbnail image" class="w-full h-auto my-8 rounded-sm" width="400" height="300">
+                <img :src="`${doc.image.src}`" alt="post thumbnail image" class="w-full h-auto my-8 rounded-sm" width="400" height="300">
             </header>
 
             <article class="w-full h-full col-span-5 overflow-y-auto md:max-h-[80vh] text-xl font-light px-8 py-12">

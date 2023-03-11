@@ -5,7 +5,7 @@
             <PostCard v-for="post in list" :key="post._path" 
                 :title="post.title"
                 :desc="post.description"
-                :src="post.thumbnail"
+                :src="post.image.src"
                 :url="post._path" />
         </ContentList>
     </div>

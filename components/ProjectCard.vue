@@ -1,5 +1,5 @@
 <template>
-        <a :href="$attrs.href" class="inline-block w-[300px] h-[225px] lg:w-[400px] lg:h-[300px] rounded-lg text-xl lg:text-2xl font-semibold text-slate-100 overflow-hidden border-2 border-slate-900 hover:border-slate-500" :style="{ backgroundImage: 'url('+$attrs.src+')', backgroundSize: 'contain', backgroundRepeat:'no-repeat' }" _blank>
+        <a :href="$attrs.href" class="inline-block w-[300px] h-[225px] lg:w-[400px] lg:h-[300px] rounded-lg text-xl lg:text-2xl font-semibold text-slate-100 overflow-hidden border-2 border-slate-900 hover:border-slate-500" :style="{ backgroundImage: `url('`+$attrs.src+`')`, backgroundSize: 'contain', backgroundRepeat:'no-repeat' }" _blank>
             <div class="w-full h-full bg-gradient-to-t from-black to-[#00000000]">
                 <div class="flex justify-between gap-4 items-end h-full p-4 mt-full">
                     <h2>{{ title }}</h2>

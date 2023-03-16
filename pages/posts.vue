@@ -9,10 +9,19 @@
         </div>
         
         <div id="side-nav" class="w-64">
-            <header class="flex items-end gap-2 text-xl text-slate-300 h-[1em]">
-                <h1 class="inline-block whitespace-nowrap">NAV</h1>
-                <div class="bg-slate-500 w-full h-[2px] mb-2"></div>
-            </header>
+            <SectionHeader title="NAV" class="text-xl xxl:hidden"/>
+            <SectionHeader title="NAV" vertical class="text-xl absolute -left-4" />
+
+            <!-- tags/recent/popular -->
+            <a href="#">Some link to post or tag</a>
+            <a href="#">Some link to post or tag</a>
+
+            <SectionHeader title="FRIENDS" class="text-xl xxl:hidden"/>
+            <SectionHeader title="FRIENDS" vertical class="text-xl absolute -left-4" />
+
+            <!-- friends site links -->
+            <a href="#">Some link</a>
+            <a href="#">Some link</a>
         </div>
     </section>
 </template>

@@ -4,9 +4,9 @@
             <Logo width="32" height="32" class="logo" />
         </a>
         <ul class="links flex gap-12">
-            <PageLink label="Home" />
-            <PageLink label="About" />
-            <PageLink label="Contact" />
+            <PageLink label="Home" url="/" />
+            <PageLink label="About" url="/about" />
+            <PageLink label="Contact" url="/contact" />
         </ul>
     </nav>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="relative page-link flex items-center px-2">
+    <a :href="url" class="relative page-link flex items-center px-2">
         <span class="text-lg">{{ label }}</span>
         <Icon name="icon-park-outline:right-small" size="1.3em" class="icon" />
     </a>
@@ -8,7 +8,8 @@
 <script>
     export default {
         props: {
-            label: 'Link'
+            label: 'Link',
+            url: String
         }
     }
 </script>

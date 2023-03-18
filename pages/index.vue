@@ -9,7 +9,7 @@
                 <span>Welcome to the</span>
                 <h1 class="main text-orange-gradient relative">Oddward blog</h1>
             </header>
-            <p class="text-xl lg:text-2xl xxl:text-3xl">Explore, reach out and discuss some ideas around software development, personal development, design, and where my hobbies and interests align with those.</p>
+            <p class="text-xl lg:text-2xl xxl:text-3xl">Explore, receive, reach out and discuss some ideas around software development, personal development, design, and where my hobbies and interests align with those.</p>
             <div class="flex justify-end px-4">
                 <PageLink label="About me" />
             </div>
@@ -38,6 +38,9 @@
         <Projects />
     </section>
     
+    <section class="mx-auto py-12 px-8">
+        <ContactForm />
+    </section>
 </template>
 
 <style scoped>

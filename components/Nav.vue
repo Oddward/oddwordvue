@@ -1,12 +1,12 @@
 <template>
-    <nav class="flex w-full justify-between p-4 border-b border-slate-700 xxl:floater-nav">
+    <nav class="flex w-full justify-between p-4 pr-8 border-b border-slate-700 xxl:floater-nav">
         <a href="/" class="w-8">
             <Logo width="32" height="32" class="logo" />
         </a>
         <ul class="links flex gap-12">
             <PageLink label="Home" url="/" />
             <PageLink label="About" url="/about" />
-            <PageLink label="Contact" url="/contact" />
+            <PageLink label="Contact" url="#contact" />
         </ul>
     </nav>
 </template>

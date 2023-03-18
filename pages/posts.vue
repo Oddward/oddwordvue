@@ -24,4 +24,8 @@
             <a href="#">Some link</a>
         </div>
     </section>
+
+    <section class="mx-auto py-12 px-8">
+        <ContactForm />
+    </section>
 </template>

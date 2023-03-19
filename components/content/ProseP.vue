@@ -1,3 +1,3 @@
 <template>
-    <p class="py-4"><slot /></p>
+    <p class="py-4 text-justify"><slot /></p>
 </template>

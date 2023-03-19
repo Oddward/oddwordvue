@@ -1,8 +1,8 @@
 <template>
     <section class="flex flex-col items-center py-8 px-8">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 w-full lg:w-[900px] my-8">
-            <div class="shrink rounded-full border border-t-transparent border-l-transparent rotate-[45deg] overflow-hidden">
-                <img src="/img/pfpnobg.png" alt="" width="240" height="240" class="rotate-[-45deg]">
+            <div class="w-[200px] lg:w-[240px] rounded-full border border-t-transparent border-l-transparent rotate-[45deg] overflow-hidden">
+                <img src="/img/pfpnobg.png" alt="Portrait of Mugtaba G" width="240" height="240" class="rotate-[-45deg]">
             </div>
             <div class="inline-block text-center lg:text-left">
                 <h1 class="main text-orange-gradient">MUGTABA GAROOT</h1>

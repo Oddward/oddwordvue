@@ -1,10 +1,11 @@
 <template>
-    <div id="contact" class="grid :lg:grid-rows-2 lg:grid-cols-2">
-        <div>
-            <h1 class="mb-8">
-                <img src="/img/Get in touch.svg" alt="Get in touch (contact form header)">
-            </h1>
+    <div class="my-8">
+    <h1 class="mb-8">
+        <img src="/img/Get in touch.svg" alt="Get in touch (contact form header)">
+    </h1>
 
+    <div id="contact" class="grid :lg:grid-rows-2 lg:grid-cols-2">
+        <div class="my-4">
             <div class="form-group">
                 <h2 class="text-2xl text-slate-400 font-semibold">Message me:</h2>
                 <div class="flex gap-4 text-2xl mb-8">
@@ -29,23 +30,23 @@
             </div>
 
             <h2 class="text-2xl text-slate-400 font-semibold group">
-                <span>or submit form </span> 
+                <span>or submit a form </span> 
                 <Icon name="icon-park-outline:arrow-right-down" class="text-slate-500 transition duration-200 group-hover:rotate-45 lg:group-hover:-rotate-45" />
             </h2>
         </div>
 
-        <form id="contact-form" name="input" action="" method="post" class="mt-12">
+        <form id="contact-form" name="input" action="" method="post">
             <div class="">
                 <div class="text-left flex flex-col justify-start">
-                    <div class="form-group mt-8">
+                    <div class="form-group my-4">
                         <label for="sender">Name:</label>
                         <input type="text" class="form-textbox" id="sender" placeholder="E.g. John D..." aria-describedby="emailHelp" name="name" v-model="sender">
                     </div>
-                    <div class="form-group mt-8">
+                    <div class="form-group my-4">
                         <label for="email-ad">Email:*</label>
                         <input type="email" class="form-textbox" id="email-ad" placeholder="E.g. johnd@mymail.com..." aria-describedby="emailHelp" name="_replyto" required>
                     </div>
-                    <div class="form-group mt-8">
+                    <div class="form-group my-4">
                         <label for="subject">Subject: <small id="subtext">{{ sender + ' // ' + subject }}</small></label>
                         <select id="subject" class="form-textbox" name="subject" v-model="subject">
                             <option disabled class="text-gray-400" value="">- Select subject -</option>
@@ -56,7 +57,7 @@
                     </div>
                 </div>
             
-                <div class="text-left mt-8">
+                <div class="text-left my-4">
                     <div class="form-group">
                         <label for="mail-msg">Message:*</label>
                         <textarea name="message" id="#mail-msg" class="form-textbox" cols="30" rows="6" placeholder="Please enter your message here" required></textarea>
@@ -71,6 +72,7 @@
                 </div>
             </div>
         </form>
+    </div>
     </div>
 </template>
 

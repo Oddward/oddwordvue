@@ -47,7 +47,7 @@
                         <input type="email" class="form-textbox" id="email-ad" placeholder="E.g. johnd@mymail.com..." aria-describedby="emailHelp" name="_replyto" required>
                     </div>
                     <div class="form-group my-4">
-                        <label for="subject">Subject: <small id="subtext">{{ sender + ' // ' + subject }}</small></label>
+                        <label for="subject">Subject: <small id="subtext">{{ sender + subject }}</small></label>
                         <select id="subject" class="form-textbox" name="subject" v-model="subject">
                             <option disabled class="text-gray-400" value="">- Select subject -</option>
                             <option value="Professional enquiry (vercel)">Professional inquiry</option>
@@ -81,7 +81,7 @@
         data() {
             return {
                 sender: '',
-                subject: 'Unspecified subject',
+                subject: '( Unspecified subject )',
                 socials: [
                     {
                         icon: 'simple-icons:twitter',

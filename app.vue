@@ -18,7 +18,7 @@
       <a rel="me" href="https://universeodon.com/@oddward" class="hover:text-white">
         <Icon name="fa6-brands:mastodon" />
       </a>
-      <a href="https://universeodon.com/@oddward" class="hover:text-white">
+      <a href="https://twitter.com/oddward_io" class="hover:text-white">
         <Icon name="icon-park-solid:twitter" />
       </a>
       <a href="https://github.com/oddward" class="hover:text-white">

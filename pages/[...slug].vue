@@ -1,20 +1,28 @@
 
 <template>
-    <main class="md:grid grid-cols-10 gap-8 h-full py-8">
+    <main class="md:grid grid-cols-10 h-full py-8">
         <ContentDoc v-slot="{ doc }">
 
             <header class="w-full h-full col-span-5 px-4">
                 <a id="back-btn" href="/posts" class="group flex items-center noshrink gap-2 text-xl text-slate-500 hover:text-slate-300 py-4">
                     <Icon name="icon-park-outline:arrow-left"/>
-                    <span class="opacity-0 group-hover:opacity-100 leading-tight">posts</span>
+                    <span class="lg:opacity-0 group-hover:opacity-100 leading-tight">posts</span>
                 </a>
-                <h1 class="main text-orange-gradient">{{ doc.title }}</h1>
-                <p class="text-xl text-slate-400 italic my-4">{{ doc.subtitle }}</p>
-                <div class="flex gap-4 items-center my-6 text-slate-400">
-                    <p>— <a href="/about" class="hover:underline hover:text-slate-300">{{ doc.author ?  doc.author:'Mugtaba G' }}</a></p>
-                    <span>//</span>
-                    <a href="/posts" class="tag hover:underline hover:text-slate-300">{{ doc.tags }}</a>
+
+                <a href="/posts" class="tag text-slate-400 hover:underline hover:text-slate-500 p-2 pl-0">{{ doc.tags }}</a>
+                <h1 class="text-4xl font-extrabold text-orange-gradient">{{ doc.title }}</h1>
+                <p class="text-lg text-slate-400 italic my-4">{{ doc.subtitle }}</p>
+
+                <div class="flex gap-4 items-center my-3 text-slate-400">
+                    <div>
+                        <span>—</span>
+                        <img id="bio-pic" alt="Mugtaba's profile pic" src="/img/pfp1.jpg" class="avatar ml-3" />
+                        <a href="/about" class="hover:underline hover:text-slate-300">{{ doc.author ?  doc.author:'Mugtaba G' }}</a>
+                    </div>
+                    <small v-if="doc.updatedAt">( Updated: {{ doc.updatedAt }} )</small>
+                    <!-- <a href="/posts" class="tag hover:underline hover:text-slate-300">{{ doc.tags }}</a> -->
                 </div>
+
                 <img :src="`${doc.image.src}`" alt="post thumbnail image" class="w-full h-auto my-8 rounded-sm" width="400" height="300">
             </header>
 
@@ -26,9 +34,13 @@
                 
                 <ContentRenderer :value="doc" />
 
-                <hr class="my-8">
+                <div class="flex flex-col gap-1 my-4">
+                    <div class="h-[1px] w-1/2 bg-slate-500 mr-auto"></div>
+                    <div class="h-[1px] w-1/2 bg-slate-500 mx-auto"></div>
+                    <div class="h-[1px] w-1/2 bg-slate-500 ml-auto"></div>
+                </div>
 
-                <AboutAuthor />
+                <!-- <AboutAuthor /> -->
             </article>
 
         </ContentDoc>

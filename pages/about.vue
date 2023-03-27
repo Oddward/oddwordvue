@@ -6,7 +6,7 @@
             </div>
             <div class="inline-block text-center lg:text-left">
                 <h1 class="main text-orange-gradient">MUGTABA GAROOT</h1>
-                <p class="text-xl text-slate-400">Developer // Designer // Digital content creator</p>
+                <p class="text-xl text-slate-400">Developer  ⫽  Designer  ⫽  Digital content creator</p>
             </div>
         </div>
 
@@ -22,11 +22,10 @@
 
     <section class="mx-auto py-12 px-8">
         <SectionHeader title="Dev Skills" class="xxl:hidden my-4"/>
-        <SectionHeader vertical title="Dev Skills" class="absolute -left-8" />
 
-        <p class="text-xl text-slate-200 rounded-md p-4 bg-slate-800">Solid fundamentals in HTML, CSS, JS, with a focus on frontend design and experience with different view libraries. Main stack currently: Vue + TailwindCSS + NodeJS/some backend framework</p>
+        <p class="text-xl text-slate-300 font-light rounded-md p-4 bg-slate-800">Solid fundamentals in HTML, CSS, JS, with a focus on frontend design and experience with different view libraries. Main stack currently: Vue + TailwindCSS + NodeJS/some backend framework</p>
 
-        <div class="flex justify-start gap-12 flex-wrap mx-auto text-3xl lg:text-5xl my-8">
+        <div class="flex justify-start items-center gap-12 flex-wrap mx-auto text-3xl lg:text-5xl my-8">
             <BigIconLabeled icon="iconoir:html5" label="HTML5" />
             <BigIconLabeled icon="iconoir:css3" label="CCS3" />
             <BigIconLabeled icon="teenyicons:javascript-outline" label="Javascript" />
@@ -49,29 +48,36 @@
             <BigIconLabeled icon="simple-icons:vercel" label="Vercel" />
             <BigIconLabeled icon="simple-icons:webflow" label="Webflow" />
             <BigIconLabeled icon="simple-icons:wordpress" label="Wordpress" />
+            <BigIconLabeled src="/img/cloudinary_stacked_logo_white.png" label="Cloudinary" class="w-[30px] h-[30px] lg:w-[48px] lg:h-[48px]" />
         </div>
     </section>
 
     <section class="mx-auto py-12 px-8">
         <SectionHeader title="Design Skills" class="xxl:hidden my-4"/>
-        <SectionHeader vertical title="Design Skills" class="absolute -left-8" />
 
-        <p class="text-xl text-slate-200 rounded-md p-4 bg-slate-800">Solid graphic design fundamentals for UI, UX, and illustration. 2D & 3D art, and experience with lots of different tools.</p>
+        <p class="text-xl text-slate-300 font-light rounded-md p-4 bg-slate-800">Solid graphic design fundamentals for UI, UX, and illustration. 2D & 3D art, and experience with lots of different tools.</p>
 
-        <div class="flex justify-start gap-12 flex-wrap mx-auto text-3xl lg:text-5xl my-8">
+        <div class="flex justify-start items-center gap-12 flex-wrap mx-auto text-3xl lg:text-5xl my-8">
             <BigIconLabeled icon="simple-icons:figma" label="Figma" />
             <BigIconLabeled icon="simple-icons:framer" label="Framer" />
             <BigIconLabeled icon="simple-icons:adobeillustrator" label="Illustrator" />
             <BigIconLabeled icon="simple-icons:adobephotoshop" label="Photoshop" />
             <BigIconLabeled icon="simple-icons:blender" label="Blender" />
-            <!-- Add support for custom svg (size em) in BigIconLabeled -->
-            <!-- <BigIconLabeled icon="simple-icons:" label="Davinci Resolve" /> -->
+            <BigIconLabeled icon="simple-icons:penpot" label="Penpot" />
+            <BigIconLabeled src="/img/davinci-resolve.svg" label="Davinci Resolve" class="w-[30px] h-[30px] lg:w-[48px] lg:h-[48px]" />
         </div>
     </section>
 
     <section class="mx-auto py-12 px-8 text-slate-200">
         <SectionHeader title="Extras" class="xxl:hidden my-4"/>
-        <SectionHeader vertical title="Extras" class="absolute -left-8" />
+
+        <div class="flex justify-start items-center gap-12 flex-wrap mx-auto text-3xl lg:text-5xl my-8">
+            <BigIconLabeled icon="simple-icons:microsoftword" label="Word" />
+            <BigIconLabeled icon="simple-icons:microsoftexcel" label="Excel" />
+            <BigIconLabeled icon="simple-icons:microsoftpowerpoint" label="PowerPoint" />
+            <BigIconLabeled icon="simple-icons:trello" label="Trello" />
+            <BigIconLabeled icon="simple-icons:notion" label="Notion" />
+        </div>
 
         <div class="pb-8">
             <h2 class="flex items-center gap-4 text-xl font-semibold text-slate-400"><Icon name="icon-park-outline:translate" /> Language</h2>
@@ -101,7 +107,7 @@
         </div>
     </section>
 
-    <section class="mx-auto py-12 px-8">
+    <section id="contact" class="mx-auto py-12 px-8">
         <ContactForm />
     </section>
 </template>

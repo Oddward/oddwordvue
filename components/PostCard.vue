@@ -8,7 +8,7 @@
             <a :href="url">
                 <h2 class="text-lg lg:text-2xl font-bold hover:underline">{{ title }}</h2>
             </a>
-            <p class="w-full h-24 md:h-auto text-sm lg:text-xl overflow-hidden text-ellipsis">{{ desc }}</p>
+            <p class="w-full h-24 md:h-auto text-sm lg:text-lg leading-tight lg:leading-tight overflow-hidden text-ellipsis text-slate-300">{{ desc }}</p>
         </div>
 
         <div class="flex flex-row md:flex-col items-center nowrap border-t md:border-l border-slate-700 w-[300px] md:w-24">

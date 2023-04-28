@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
 
-        <div class="md:widescreen-grid xxl:ultrawide-grid relative">
+        <div class="content-layout relative">
             <Nav />
             <slot />
         </div>
@@ -12,20 +12,20 @@
 </template>
 
 <style scoped>
-    .md\:widescreen-grid {
-        display: grid;
+    .content-layout {
+        /* display: grid;
         grid-template-rows: auto 1fr;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; */
         min-height: 0;
+        @apply flex flex-col;
+        @apply xxl:flex xxl:flex-row;
     }
-    .xxl\:ultrawide-grid {
+    /* .ultrawide-grid {
+        @apply xxl:relative xxl:grid;
         position: relative;
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: auto 1fr;
-        /* grid-template-areas: 
-            'sidenav content'
-            'footer footer'; */
         min-height: 0;
-    }
+    } */
 </style>

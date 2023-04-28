@@ -3,7 +3,7 @@
     <a href="https://github.com/oddward/oddwordvue">Website under construction</a>
   </div>
 
-  <div class="relative">
+  <div class="relative max-w-screen">
       <NuxtPage />
   </div>
 </template>

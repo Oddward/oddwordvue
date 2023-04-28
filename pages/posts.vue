@@ -1,4 +1,6 @@
 <template>
+    <div><NuxtLayout>
+
     <section id="main-links" class="flex justify-around flex-wrap gap-2 py-8 px-4 mx-auto lg:w-3/4">
         <PeekingSocialLinks />
     </section>
@@ -38,6 +40,8 @@
     <section class="mx-auto py-12 px-8">
         <ContactForm />
     </section>
+
+    </NuxtLayout></div>
 </template>
 
 <style scoped>

@@ -15,6 +15,12 @@
 </script>
 
 <style lang="css">
+    /* .page-link {
+
+    } */
+    .page-link:hover {
+        @apply bg-[#fff2]
+    }
     .page-link .icon {
         position: absolute;
         right: -1em;

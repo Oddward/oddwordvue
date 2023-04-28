@@ -1,10 +1,10 @@
 <template>
-    <nav class="mobile md:desktop xxl:ultrawide">
+    <nav class="mobile">
         <a href="/" class="w-8">
             <Logo width="32" height="32" class="logo" />
         </a>
 
-        <ul class="links hidden md:flex items-center gap-12">
+        <ul class="links hidden md:flex items-center gap-12 xxl:flex-col xxl:gap-6 xxl:items-start">
             <PageLink label="Home" url="/" />
             <PageLink label="About" url="/about" />
             <PageLink label="Contact" url="#contact" />
@@ -28,10 +28,12 @@
 
 <style scoped>
     .mobile {
-        @apply sticky bottom-0 flex justify-between items-center border-t border-slate-700 bg-slate-900 w-full p-4 md:px-16 z-20
+        @apply sticky bottom-0 flex flex-row justify-between items-center border-t border-slate-700 bg-slate-900 w-full p-4 md:px-16 z-20;
+        @apply md:top-0 md:bottom-auto border-0 border-b; /*Medium screen*/
+        @apply xxl:flex-col xxl:justify-start xxl:items-start xxl:gap-24 xxl:top-28 xxl:w-28 xxl:border-0; /*Extra large screen*/
     }
-    .md\:desktop {
-        @apply sticky top-0 bottom-auto flex justify-between items-center border-b border-slate-700 bg-slate-900 w-full p-4 md:px-16 pr-20 z-20
+    /* .md\:desktop {
+        @apply sticky top-0 bottom-auto flex flex-row justify-between items-center border-b border-slate-700 bg-slate-900 w-full p-4 md:px-16 pr-20 z-20
     }
     .xxl\:ultrawide {
         @apply sticky top-16 left-0 flex flex-col justify-start items-start border-0 text-xl gap-16 w-full h-auto min-h-0 h-64 p-16;
@@ -42,7 +44,7 @@
     }
     .xxl\:ultrawide ul {
         @apply flex-col gap-6 items-start
-    }
+    } */
 </style>
 
 <!-- :class="{ desktop: !mobile, mobile: mobile }" -->

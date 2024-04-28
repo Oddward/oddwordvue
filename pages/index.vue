@@ -1,18 +1,18 @@
 <template>
-    <section id="hero" class="flex flex-wrap md:flex-nowrap content-center justify-around gap-6 py-8">
+    <section id="hero" class="flex flex-wrap md:flex-nowrap content-center justify-around gap-6 py-8 px-8">
         <div class="w-[300px] lg:w-[400px] h-auto m-4 shrink-0 grow-0">
-            <img src="/img/pfp1_crop_nobg.png" alt="Oddward silhouette hero portrait" class="border-l border-b rounded-bl-[3rem] lg:rounded-bl-[6rem] w-full h-auto">
+            <img src="/img/pfp1_crop_nobg.png" alt="Oddward silhouette hero portrait" class="border-l border-b rounded-bl-[3rem] lg:rounded-bl-[6rem]">
         </div>
 
         <article class="flex flex-col justify-center gap-6 w-75 m-4 w-full xxl:w-3/4">
             <header class="relative my-6">
                 <span>Welcome to the</span>
-                <h1 class="main text-orange-gradient relative">Oddward blog</h1>
+                <h1 class="text-orange-gradient relative">Oddword garden</h1>
             </header>
-            <p class="text-xl lg:text-2xl xxl:text-3xl">Explore, reach out and discuss some ideas around software development, personal development, design, and where my hobbies and interests align with those.</p>
-            <div class="flex justify-end px-4">
+            <p class="text-xl lg:text-2xl xxl:text-3xl">Explore, reach out and discuss some ideas around personal development, software development, design, and wherever my other interests & values align with those.</p>
+            <!-- <div class="flex justify-end px-4">
                 <PageLink label="About me" />
-            </div>
+            </div> -->
         </article>
     </section>
 
@@ -41,6 +41,22 @@
 </template>
 
 <style scoped>
+    #hero {
+        display: flex;
+        align-content: center;
+        div img {
+            aspect-ratio: auto;
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            max-width: auto;
+        }
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
     h1::after {
         position: absolute;
         content: 'Creative';
@@ -50,5 +66,9 @@
         font-weight: light;
         color: white;
         font-family: cursive;
+    }
+    p {
+        font-size: var(--text-normal);
+        line-height: var(--leading-comfortable);
     }
 </style>

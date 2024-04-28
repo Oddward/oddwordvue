@@ -33,7 +33,7 @@
 </script>
 
 <style scoped>
-    .card:hover h2 {
+    /* .card:hover h2 {
         @apply text-orange-gradient
-    }
+    } */
 </style>

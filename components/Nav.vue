@@ -4,7 +4,9 @@
             <Logo width="32" height="32" class="logo" />
         </a>
         <ul class="links flex gap-12">
-            <PageLink label="Home" />
+            <PageLink label="Home">
+                <Icon name="ri:home-2-line" size="1.3em" class="icon" />
+            </PageLink>
             <PageLink label="About" />
             <PageLink label="Contact" />
         </ul>

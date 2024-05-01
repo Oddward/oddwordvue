@@ -14,13 +14,16 @@
     <p>© 2023 — Oddward // Mugtaba G</p>
     <div class="flex justify-between nowrap">
       <a rel="me" href="https://universeodon.com/@oddward">
-        <Icon name="icon-park-outline:mastodon" />
+        <Icon name="ri:mastodon-fill" />
       </a>
-      <a href="https://universeodon.com/@oddward">
-        <Icon name="icon-park-solid:twitter" />
+      <a href="https://x.com/oddward_io">
+        <Icon name="ri:twitter-x-fill" />
       </a>
-      <a href="https://github.com/oddward">
-        <Icon name="icon-park-outline:github" />
+      <a href="https://threads.com/@mugtaba.g">
+        <Icon name="ri:threads-fill" />
+      </a>
+      <a href="https://github.com/Oddward">
+        <Icon name="ri:github-fill" />
       </a>
     </div>
   </footer>

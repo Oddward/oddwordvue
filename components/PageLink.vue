@@ -2,11 +2,11 @@
     <a href="#" class="relative page-link flex items-center px-2">
         <span class="icons-container">
             <slot name="default">
-                <Icon name="icon-park-outline:right-small" size="1.3em" class="icon" />
+                <Icon name="icon-park-outline:right-small" size="1.2em" class="icon" />
             </slot>
-            <Icon name="icon-park-outline:right-small" size="1.3em" class="icon" />
+            <Icon name="ri:arrow-right-line" size="1.2em" class="icon" />
         </span>
-        <span>{{ label }}</span>
+        <span class="label">{{ label }}</span>
     </a>
 </template>
 
@@ -18,57 +18,52 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .page-link {
         position: relative;
         display: inline-flex;
         align-items: center;
+        justify-content: space-between;
         gap: .3em;
         font-size: var(--text-normal);
-        height: calc(var(--text-normal) + 1em);
-        padding-inline: .5em;
+        padding-inline: .5rem;
+        padding-block: .2rem;
+    }
+    .icons-container {
+        position: relative;
+        height: 1.2em;
+        width: 1.2em;
+        overflow: hidden;
 
         .icon {
             position: absolute;
+            top: calc(50% - 0.6em);
+            transition: all .25s ease-in-out;
+        }
+
+        .icon:first-of-type {
+            transform: scale(1);
+        }
+
+        .icon:nth-child(2) {
+            left: -1.2em;
+        }
+    }
+    .page-link:hover .icons-container {
+        .icon:first-of-type {
+            transform: scale(0);
+        }
+        
+        .icon:nth-child(2) {
             left: 0;
-            transition: all .2s ease;
-        }
-        .icons-container {
-            position: relative;
-            height: var(--text-normal);
-            width: 1.3em;
-            .icon {
-                top: calc(50% - 0.65em);
-                opacity: 1;
-                transition-delay: 0;
-            }
-            .icon + .icon {
-                top: 1.5;
-                opacity: 0;
-                transition-delay: .1s;
-            }
-        }
-        &:hover .icons-container {
-            .icon {
-                top: -1.5em;
-                opacity: 0;
-                transition-delay: .1s;
-            }
-            .icon + .icon {
-                top: calc(50% - 0.65em);
-                opacity: 1;
-                transition-delay: 0;
-            }
         }
     }
-    /* .page-link .icon {
-        position: absolute;
-        right: -.5em;
-        opacity: 30%;
-        transition: right 200ms ease-out;
+    nav .label {
+        display: none;
     }
-    .page-link:hover .icon {
-        right: -1em;
-        opacity: 100;
-    } */
+    @media screen and (min-width: 640px) {
+        nav .label {
+            display: inline;
+        }
+    }
 </style>

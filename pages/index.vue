@@ -1,6 +1,6 @@
 <template>
     <section id="hero" class="flex flex-wrap md:flex-nowrap content-center justify-around gap-6 py-8 px-8">
-        <div class="w-[300px] lg:w-[400px] h-auto m-4 shrink-0 grow-0">
+        <div class="">
             <img src="/img/pfp1_crop_nobg.png" alt="Oddward silhouette hero portrait" class="border-l border-b rounded-bl-[3rem] lg:rounded-bl-[6rem]">
         </div>
 
@@ -9,7 +9,7 @@
                 <span>Welcome to the</span>
                 <h1 class="text-orange-gradient relative">Oddword garden</h1>
             </header>
-            <p class="text-xl lg:text-2xl xxl:text-3xl">Explore, reach out and discuss some ideas around personal development, software development, design, and wherever my other interests & values align with those.</p>
+            <p class="text-xl lg:text-2xl xxl:text-3xl">Explore, reach out and discuss some ideas around personal development, software development, design, art, and where those threads intersect.</p>
             <!-- <div class="flex justify-end px-4">
                 <PageLink label="About me" />
             </div> -->
@@ -40,22 +40,31 @@
     
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     #hero {
         display: flex;
+        justify-content: center;
         align-content: center;
-        div img {
+        gap: 1rem;
+        & div img {
             aspect-ratio: auto;
             width: 100%;
             height: auto;
-            max-height: 70vh;
-            max-width: auto;
+            /* max-height: 100%;
+            max-width: auto; */
+            border-left: solid 1px rgb(var(--mono-rgb));
+            border-bottom: solid 1px rgb(var(--mono-rgb));
+            border-bottom-left-radius: 3rem;
+        }
+        & div:has(img) {
+            width: 70%;
+            height: auto;
         }
     }
     article {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .5rem;
     }
     h1::after {
         position: absolute;
@@ -70,5 +79,20 @@
     p {
         font-size: var(--text-normal);
         line-height: var(--leading-comfortable);
+    }
+    @media screen and (min-width: var(--sm)) {
+        #hero {
+            & div:has(img) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    @media screen and (min-width: var(--lg)) {
+        #hero {
+            & div:has(img) {
+                border-bottom-left-radius: 3rem;
+            }
+        }
     }
 </style>

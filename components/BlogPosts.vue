@@ -12,7 +12,7 @@
     
 
     <div v-if="preview" class="flex justify-center content-center">
-        <PageLink label="View all posts" href="/posts" />
+        <PageLink label="View all posts" href="/posts" ></PageLink>
     </div>
 </template>
 

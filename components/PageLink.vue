@@ -1,10 +1,10 @@
 <template>
-    <a href="#" class="relative page-link flex items-center px-2">
+    <a href="#" class="relative page-link">
         <span class="icons-container">
             <slot name="default">
                 <Icon name="icon-park-outline:right-small" size="1.2em" class="icon" />
             </slot>
-            <Icon name="ri:arrow-right-line" size="1.2em" class="icon" />
+            <Icon name="ri:arrow-right-line" size="1.2em" class="icon text-[gold]" />
         </span>
         <span class="label">{{ label }}</span>
     </a>
@@ -35,25 +35,22 @@
         width: 1.2em;
         overflow: hidden;
 
-        .icon {
+        .icon, :slotted(.icon) {
             position: absolute;
             top: calc(50% - 0.6em);
-            transition: all .25s ease-in-out;
+            transition: all .2s ease-in-out;
         }
-
-        .icon:first-of-type {
+        :slotted(.icon:first-of-type) {
             transform: scale(1);
         }
-
         .icon:nth-child(2) {
             left: -1.2em;
         }
     }
     .page-link:hover .icons-container {
-        .icon:first-of-type {
+        :slotted(.icon:first-of-type) {
             transform: scale(0);
         }
-        
         .icon:nth-child(2) {
             left: 0;
         }

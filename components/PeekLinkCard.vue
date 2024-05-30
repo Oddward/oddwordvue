@@ -5,7 +5,7 @@
                 <Icon :name="icon" size="1em" />
                 <span class="font-semibold leading-none">{{ label }}</span>
             </div>
-            <img :src="$attrs.src" alt="" width="80" height="100" class="absolute transition-all duration-200 ease-out rounded bg-gray-500">
+            <img :src="$attrs.src" alt="" width="80" height="100" class="absolute transition-all duration-200 rounded bg-gray-500">
         </a>
     </div>
 </template>
@@ -30,7 +30,8 @@
 <style scoped>
     a > div > span {
         margin-inline-start: .5em;
-        transition: margin-inline-start 200ms ease-out;
+        transition: margin-inline-start 200ms;
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     }
     a:hover > div > span {
         margin-inline-start: 1em;
@@ -42,7 +43,8 @@
     }
     a:hover > img {
         bottom: -2rem;
-        /* right: 1.5rem; */
-        transform: rotate(23deg);
+        right: .85rem;
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+        transform: rotate(22deg);
     }
 </style>

@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
     body {
-        @apply bg-slate-900 text-gray-200 text-base
+        @apply bg-slate-900 text-gray-200
     }
 }
 
@@ -60,6 +60,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     .bg-dribbble {
         background-color: #ea4c89; /*Dribbble pink*/
+    }
+    .hover-accent-bg:hover,
+    .hover-accent-bg.active {
+        @apply bg-[gold] text-slate-900
+    }
+    .hover-accent-bg:hover svg,
+    .hover-accent-bg.active svg {
+        @apply text-slate-900
     }
 }
 

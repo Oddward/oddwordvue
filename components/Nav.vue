@@ -10,7 +10,7 @@
             <PageLink label="About">
                 <Icon name="ri:user-smile-line" size="1.2em" class="icon" />
             </PageLink>
-            <PageLink label="Contact">
+            <PageLink label="Contact" class="hover-accent-bg">
                 <Icon name="ri:message-3-line" size="1.2em" class="icon" />
             </PageLink>
         </ul>
@@ -30,23 +30,28 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: .5rem 1rem;
+        padding-inline: 1rem;
     }
     ul {
         display: flex;
         gap: .5rem;
     }
+    ul > * {
+        height: 100%;
+    }
     .logo {
+        flex-shrink: 0;
         width: 1.5rem;
         height: 1.5rem;
+        margin-block: .5rem;
     }
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
         ul {
             gap: 2.5rem;
         }
         .logo {
-            width: 2rem;
-            height: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
         }
     }
     /* .mobile {

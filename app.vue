@@ -3,9 +3,10 @@
     <a href="https://github.com/oddward/oddwordvue">Website under construction</a>
   </div>
 
-  <div class="container mx-auto xxl:w-[1800px] xxl:ml-[15%]">
+  <Nav />
+  
+  <div id="webpage" class="container mx-auto xxl:w-[1800px] xxl:ml-[15%]">
     <NuxtLayout>
-      <Nav />
       <NuxtPage />
     </NuxtLayout>
   </div>

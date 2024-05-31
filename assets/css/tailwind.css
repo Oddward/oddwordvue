@@ -45,6 +45,12 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         gap: 2rem;
     }
+    .action-btn {
+        @apply inline-block flex flex-row gap-2 flex-nowrap justify-center py-2 px-4 rounded-md
+    }
+    .action-btn-secondary {
+        @apply action-btn border border-2
+    }
 }
 
 @layer utilities {

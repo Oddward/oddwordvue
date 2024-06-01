@@ -2,9 +2,11 @@
     <a href="#" class="relative page-link">
         <span class="icons-container">
             <slot name="default">
-                <Icon name="icon-park-outline:right-small" size="1.2em" class="icon" />
+                <Icon name="ri:arrow-right-line" size="1.2em" class="icon" />
             </slot>
-            <Icon name="ri:arrow-right-line" size="1.2em" class="icon text-[gold]" />
+            <slot name="pointer">
+                <Icon name="ri:arrow-right-line" size="1.2em" class="icon text-[gold]" />
+            </slot>
         </span>
         <span class="label">{{ label }}</span>
     </a>
@@ -43,7 +45,7 @@
         :slotted(.icon:first-of-type) {
             transform: scale(1);
         }
-        .icon:nth-child(2) {
+        :slotted(.icon:not(:first-of-type)) {
             left: -1.2em;
         }
     }
@@ -51,7 +53,7 @@
         :slotted(.icon:first-of-type) {
             transform: scale(0);
         }
-        .icon:nth-child(2) {
+        :slotted(.icon:not(:first-of-type)) {
             left: 0;
         }
     }

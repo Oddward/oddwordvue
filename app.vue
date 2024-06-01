@@ -1,11 +1,11 @@
 <template>
-  <div class="flex justify-center bg-black p-2">
+  <div class="flex justify-center text-sm bg-black p-2">
     <a href="https://github.com/oddward/oddwordvue">Website under construction</a>
   </div>
 
   <Nav />
   
-  <div id="webpage" class="container mx-auto xxl:w-[1800px] xxl:ml-[15%]">
+  <div class="container mx-auto xxl:w-[1800px] xxl:ml-[15%] pt-12">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

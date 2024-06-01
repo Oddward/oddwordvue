@@ -1,9 +1,9 @@
 <template>
     <div class="relative pt-4 px-2 mb-8 overflow-hidden">
-        <a :href="$attrs.href" class="flex content-center rounded-md p-6 transition-all duration-200 w-[400px] h-[96] cursor-pointer" :class="$attrs.class2">
+        <a :href="$attrs.href" class="flex content-center rounded-md p-6 transition-all duration-200 w-[300px] h-[96] cursor-pointer" :class="$attrs.class2">
             <div class="flex items-center text-2xl">
                 <Icon :name="icon" size="1em" />
-                <span class="font-semibold leading-none">{{ label }}</span>
+                <span class="relative z-20 font-semibold leading-none">{{ label }}</span>
             </div>
             <img :src="$attrs.src" alt="" width="80" height="100" class="absolute transition-all duration-200 rounded bg-gray-500">
         </a>

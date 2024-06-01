@@ -1,7 +1,7 @@
 <template>
     <section id="hero" class="flex flex-wrap md:flex-nowrap content-center justify-around gap-6 py-8 px-8">
         <div class="">
-            <img src="/img/pfp1_crop_nobg.png" alt="Oddward silhouette hero portrait" class="border-l border-b rounded-bl-[3rem] lg:rounded-bl-[6rem]">
+            <img src="/img/pfp1_crop_nobg.png" alt="Oddward silhouette hero portrait" class="">
         </div>
 
         <article class="flex flex-col justify-center gap-6 w-75 m-4 w-full xxl:w-3/4">
@@ -56,12 +56,10 @@
         max-width: auto; */
         border-left: solid 1px rgb(var(--mono-rgb));
         border-bottom: solid 1px rgb(var(--mono-rgb));
-        border-bottom-left-radius: 3rem;
+        @apply border-l border-b rounded-bl-[1.5rem] md:rounded-bl-[2rem] lg:rounded-bl-[2.5rem]
     }
     #hero div:has(img) {
-        width: 70%;
-        height: auto;
-        @apply w-[70%] h-auto lg:w-1/2
+        @apply w-[70%] h-auto lg:w-1/2 max-w-56 md:max-w-60
     }
     article {
         display: flex;

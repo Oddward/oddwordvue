@@ -12,11 +12,11 @@
                 <Icon name="ri:user-smile-line" size="1.2em" class="icon" />
             </PageLink>
 
-            <PageLink label="Contact" class="hover-accent-bg" :class="contactShow ? 'active':'' " @click="toggleContact">
+            <PageLink label="Contact" class="hover-accent-bg" :class="contactShow ? 'active':''" @click="toggleContact">
                 <Icon name="ri:message-3-line" size="1.2em" class="icon" />
-                <Template #pointer>
-                    <Icon name="ri:arrow-down-line" size="1.2em" class="icon" />
-                </Template>
+                <template #pointer>
+                    <Icon name="ri:arrow-down-line" size="1.2em" class="icon text-[--accent-solid]" />
+                </template>
             </PageLink>
         </ul>
         <div id="contact-panel" v-show="contactShow">
@@ -109,7 +109,7 @@
         @apply flex flex-col gap-2
     }
     #contact-panel {
-        @apply absolute z-20 top-full right-0 flex flex-col gap-4 h-auto w-full sm:w-96 bg-[gold] text-slate-900 px-8 pb-12
+        @apply absolute z-20 top-full right-0 flex flex-col gap-4 h-auto w-full sm:w-96 bg-[gold] text-slate-900 px-8 pb-12 shadow-md
     }
     #contact-panel label {
         @apply text-sm hidden

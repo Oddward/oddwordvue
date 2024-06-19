@@ -5,7 +5,7 @@
                 <Icon name="ri:arrow-right-line" size="1.2em" class="icon" />
             </slot>
             <slot name="pointer">
-                <Icon name="ri:arrow-right-line" size="1.2em" class="icon text-[gold]" />
+                <Icon name="ri:arrow-right-line" size="1.2em" class="icon text-[--accent-solid]" />
             </slot>
         </span>
         <span class="label">{{ label }}</span>
@@ -42,18 +42,22 @@
             top: calc(50% - 0.6em);
             transition: all .2s ease-in-out;
         }
-        :slotted(.icon:first-of-type) {
+        :slotted(.icon:first-of-type),
+        .icon:first-of-type {
             transform: scale(1);
         }
-        :slotted(.icon:not(:first-of-type)) {
+        :slotted(.icon:nth-of-type(2)),
+        .icon:nth-of-type(2) {
             left: -1.2em;
         }
     }
     .page-link:hover .icons-container {
-        :slotted(.icon:first-of-type) {
+        :slotted(.icon:first-of-type),
+        .icon:first-of-type {
             transform: scale(0);
         }
-        :slotted(.icon:not(:first-of-type)) {
+        :slotted(.icon:nth-of-type(2)),
+        .icon:nth-of-type(2) {
             left: 0;
         }
     }
